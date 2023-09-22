@@ -1,113 +1,291 @@
-import Image from 'next/image'
+import Image from "next/image";
+import {
+  AmexCardIcon,
+  AngleLeftIcon,
+  AngleRightIcon,
+  ApplePayCardIcon,
+  ArrowRightIcon,
+  CheckIcon,
+  ClarifionIcon,
+  DeliveryIcon,
+  GooglePayCardIcon,
+  HeartIcon,
+  LockGreyIcon,
+  LockWhiteIcon,
+  MasterCardIcon,
+  McAfreeIcon,
+  NortonIcon,
+  OutlinedNumber4Icon,
+  OvalCheckIcon,
+  PayCardIcon,
+  PayPalCardIcon,
+  RecursiveUpdateIcon,
+  RoundedCheckIcon,
+  RoundedNumber3Icon,
+  RoundedPercentageIcon,
+  StarsIcon,
+  StartBurstIcon,
+  VisaCardIcon,
+} from "./assets/icons";
+import OfferImage from "./assets/offer.png";
+import DeviceImage from "./assets/device.png";
+import GuaranteeImage from "./assets/guarantee.png";
+import KenImage from "./assets/ken.png";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="max-w-[360px] mx-auto flex flex-col gap-8 text-base font-normal 2xl:max-w-full 2xl:gap-0">
+      <header className="w-full gap-5 flex flex-col items-center justify-center pb-5">
+        <div className="bg-[#252F3D] h-[42px] flex justify-between items-center py-[10px] px-5 w-full 2xl:hidden">
+          <AngleLeftIcon />
+          <div className="flex items-center gap-2">
+            <StartBurstIcon />
+            <span className="text-[#FFFFFF] font-medium text-xs">
+              30-DAY SATISFACTION GUARANTEE
+            </span>
+          </div>
+          <AngleRightIcon />
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+        <div className="bg-[#252F3D] h-[50px] hidden 2xl:flex justify-between items-center py-[10px] px-32 w-full">
+          <AngleLeftIcon className="2xl:hidden" />
+          <div className="flex items-center gap-2">
+            <StartBurstIcon />
+            <span className="text-[#FFFFFF] font-medium text-xs">
+              30-DAY SATISFACTION GUARANTEE
             </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+          </div>
+          <div className="hidden 2xl:flex items-center gap-2">
+            <DeliveryIcon />
+            <span className="text-[#FFFFFF] font-medium text-xs">
+              Free delivery on orders over $40.00
             </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+          </div>
+          <div className="hidden 2xl:flex items-center gap-2">
+            <HeartIcon />
+            <span className="text-[#FFFFFF] font-medium text-xs">
+              100% Money Back Guarantee
             </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+          </div>
+          <div className="hidden 2xl:flex items-center gap-2">
+            <RecursiveUpdateIcon />
+            <span className="text-[#FFFFFF] font-medium text-xs">
+              30-DAY SATISFACTION GUARANTEE
             </span>
+          </div>
+          <AngleRightIcon className="2xl:hidden" />
+        </div>
+        <div className="flex justify-between w-[320px] 2xl:py-10 2xl:px-[127px] 2xl:w-full">
+          <div>
+            <ClarifionIcon className="w-[106.67px] 2xl:w-[192px]" />
+          </div>
+          <div className="flex gap-4 items-center 2xl:gap-8">
+            <McAfreeIcon className="w-11 2xl:w-[88px]" />
+            <NortonIcon className="w-[41px] 2xl:w-[88px]" />
+          </div>
+        </div>
+      </header>
+      <section className="flex flex-col gap-6 px-5 2xl:px-32 2xl:gap-0 2xl:w-[1245px] mx-auto">
+        <div className="text-center space-y-6">
+          <h1 className="text-[32px] leading-normal 2xl:text-5xl">
+            Wait ! your order in progress.
+          </h1>
+          <h2 className="text-[#4D5254] 2xl:text-2xl">
+            Lorem ipsum dolor sit amet, consectetur
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        </div>
+        <ul className="grid grid-cols-4 text-xs 2xl:text-[20px] 2xl:mt-[60px]">
+          <li className="flex flex-col gap-2 items-center 2xl:flex-row 2xl:gap-5">
+            <RoundedCheckIcon className="w-5 2xl:w-10" />
+            Cart Review
+          </li>
+          <li className="flex flex-col gap-2 items-center 2xl:flex-row 2xl:gap-5">
+            <RoundedCheckIcon className="w-5 2xl:w-10" />
+            Checkout
+          </li>
+          <li className="flex flex-col gap-2 items-center 2xl:flex-row 2xl:gap-5">
+            <RoundedNumber3Icon className="w-5 2xl:w-10" />
+            <strong>Special Offer</strong>
+          </li>
+          <li className="flex flex-col gap-2 items-center 2xl:flex-row 2xl:gap-5">
+            <OutlinedNumber4Icon className="w-5 2xl:w-10" />
+            Confirmation
+          </li>
+        </ul>
+        <div className="2xl:bg-[#FAFAFA] 2xl:w-full 2xl:grid 2xl:grid-cols-2 2xl:mt-[60px] 2xl:rounded-[10px] 2xl:p-10 2xl:gap-x-10 2xl:gap-y-[32px]">
+          <h2 className="text-2xl text-center col-start-2 row-start-1 mb-6 2xl:m-0">
+            <span className="text-[#2C7EF8]">ONE TIME ONLY </span>special price
+            for 6 extra Clarifion for only{" "}
+            <span className="text-[#2C7EF8]">$14 each</span> ($84.00 total!)
+          </h2>
+          <figure className="col-start-1 row-start-1 row-span-5 mb-6 2xl:m-0">
+            <Image
+              priority={true}
+              src={OfferImage}
+              alt="offer image"
+              className="rounded-xl object-cover object-center 2xl:w-[575px] 2xl:h-[591px]"
+            />
+          </figure>
+          <div className="col-start-2 row-start-2 row-span-6 flex flex-col gap-[32px]">
+            <div className="flex flex-col gap-4 justify-center w-full 2xl:justify-start">
+              <div className="flex gap-4 h-[80px] 2xl:h-[135px] 2xl:w-full">
+                <figure>
+                  <Image
+                    priority={true}
+                    src={DeviceImage}
+                    alt="offer image"
+                    className="rounded-[10px] object-cover w-20 object-center h-full 2xl:w-[134px] 2xl:h-[134px]"
+                  />
+                </figure>
+                <div className="flex flex-col w-full gap-[10px]">
+                  <div className="flex justify-between">
+                    <h3 className="text-sm 2xl:text-xl">
+                      Clarifion Air Ionizer
+                    </h3>
+                    <div className="space-x-2 font-semibold flex items-center">
+                      <span className="text-[#969696] text-[10px] 2xl:text-base">
+                        $180
+                      </span>
+                      <span className="text-[#2C7EF8] text-sm 2xl:text-[22px]">
+                        $84
+                      </span>
+                    </div>
+                  </div>
+                  <div>
+                    <StarsIcon className="w-[68px] 2xl:w-[78.11px]" />
+                  </div>
+                  <label className="text-[#37465A] text-xs flex items-center 2xl:text-base">
+                    <input
+                      type="radio"
+                      defaultChecked
+                      className="me-4 accent-[#2C7EF8]"
+                    />
+                    12 left in Stock
+                  </label>
+                  <p className="hidden 2xl:text-xs 2xl:block">
+                    Simply plug a Clarifion into any standard outlet and replace
+                    bulky, expensive air purifiers with a simple.
+                  </p>
+                </div>
+              </div>
+              <p className="text-center text-xs 2xl:hidden">
+                Simply plug a Clarifion into any standard outlet and replace
+                bulky, expensive air purifiers with a simple.
+              </p>
+            </div>
+            <div className="h-20 flex flex-col gap-4 col-start-2 row-start-3 2xl:h-[98px]">
+              <h4 className="text-xs flex items-center gap-3 2xl:text-base">
+                <CheckIcon />
+                Negative Ion Technology may <strong>help with allergens</strong>
+              </h4>
+              <h4 className="text-xs flex items-center gap-3 2xl:text-base">
+                <CheckIcon />
+                Designed for <strong>air rejuvenation</strong>
+              </h4>
+              <h4 className="text-xs flex items-center gap-3 2xl:text-base">
+                <CheckIcon />
+                <strong>Perfect for every room</strong> in all types of places.
+              </h4>
+            </div>
+            <div className="bg-[#EDF3FD] h-16 rounded-[10px] flex items-center gap-[10px] py-3 px-4 col-start-2 row-start-4">
+              <RoundedPercentageIcon />
+              <h4 className="text-sm leading-normal w-[248px] 2xl:text-base 2xl:w-[393px]">
+                Save <span className="text-[#2C7EF8]">53%</span> and get{" "}
+                <span className="text-[#2C7EF8]">6 extra Clarifision</span> for
+                only <span className="text-[#2C7EF8]">$14 Each</span>.
+              </h4>
+            </div>
+            <div className="h-[162px] space-y-3 col-start-2 row-start-5">
+              <button
+                type="button"
+                className="bg-[#59AE43] h-[51px] w-full justify-center rounded-full text-white flex items-center gap-4"
+              >
+                <span className="uppercase text-sm font-bold shrink-0">
+                  Yes - Claim my discount
+                </span>{" "}
+                <ArrowRightIcon />
+              </button>
+              <div className="h-[71px] border-[1px] py-2 px-4 rounded-[4px] border-[#CFCFCF] flex flex-col gap-3">
+                <div className="flex divide-x-2 gap-3 text-xs">
+                  <span className="flex-shrink-0">Free shipping</span>
+                  <div className="ps-3 flex gap-2 items-center">
+                    <LockGreyIcon />
+                    <span className="flex-shrink-0">
+                      Secure 256-bit SSL encryption
+                    </span>
+                  </div>
+                </div>
+                <div className="border"></div>
+                <div className="flex justify-center gap-[2px]">
+                  <VisaCardIcon />
+                  <PayCardIcon />
+                  <PayPalCardIcon />
+                  <MasterCardIcon />
+                  <GooglePayCardIcon />
+                  <ApplePayCardIcon />
+                  <AmexCardIcon />
+                </div>
+                <p className="text-center text-[#F82C2C] text-xs font-medium">
+                  No thanks, I don’t want this.
+                </p>
+              </div>
+            </div>
+            <div className="h-[77px] flex gap-4 col-start-2 row-start-6">
+              <figure>
+                <Image
+                  priority={true}
+                  src={GuaranteeImage}
+                  width={200}
+                  alt="offer image"
+                  className="rounded-[10px] object-cover object-center"
+                />
+              </figure>
+              <p className="text-xs text-[#4D5254]">
+                If you are not completely thrilled with your Clarifion - We have
+                a <strong>30 day satisfaction guarantee</strong>. Please refer
+                to our return policy at the bottom of the page for more details.
+                Happy Shopping!
+              </p>
+            </div>
+          </div>
+          <div className="bg-white rounded-xl hidden 2xl:block p-6 space-y-[18px] col-start-1 row-start-6">
+            <div className="flex items-center gap-3">
+              <figure>
+                <Image
+                  priority={true}
+                  src={KenImage}
+                  width={48}
+                  alt="offer image"
+                  className="rounded-xl object-cover object-center"
+                />
+              </figure>
+              <div>
+                <StarsIcon />
+                <div className="flex gap-[10px] items-center">
+                  <span className="text-sm font-bold">Ken T.</span>
+                  <OvalCheckIcon />
+                  <span className="text-[#5BB59A]">Verified Customer</span>
+                </div>
+              </div>
+            </div>
+            <p className="text-[#4D5254]">
+              “As soon as the Clarifions arrived I put one in my bedroom. This
+              was late in the afternoon. When I went to the bedroom in the
+              evening it smelled clean. When I went to bed I felt I could
+              breathe better. Wonderful.”
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer className="bg-[#252F3D] h-[102px] p-5 text-white flex-col flex gap-4 text-xs 2xl:mt-20">
+        <div className="flex divide-x-2 divide-white gap-3 h-[33px] py-2">
+          <span>Copyright (c) 2023</span>
+          <span className="ps-3">Clarifionsupport@clarifion.com</span>
+        </div>
+        <div className="flex items-center gap-4 justify-center">
+          <LockWhiteIcon />
+          <span>Secure 256-bit SSL encryption.</span>
+        </div>
+      </footer>
     </main>
-  )
+  );
 }
