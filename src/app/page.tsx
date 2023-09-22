@@ -205,7 +205,7 @@ export default function Home() {
                 <ArrowRightIcon />
               </button>
               <div className="h-[71px] border-[1px] py-2 px-4 rounded-[4px] border-[#CFCFCF] flex flex-col gap-3">
-                <div className="flex divide-x-2 gap-3 text-xs">
+                <div className="flex divide-x-2 gap-3 text-xs 2xl:justify-center">
                   <span className="flex-shrink-0">Free shipping</span>
                   <div className="ps-3 flex gap-2 items-center">
                     <LockGreyIcon />
