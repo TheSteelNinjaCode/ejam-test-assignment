@@ -276,7 +276,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <footer className="bg-[#252F3D] h-[102px] p-5 text-white flex-col flex gap-4 text-xs 2xl:mt-20">
+      <footer className="bg-[#252F3D] h-[102px] p-5 text-white flex-col flex gap-4 text-xs 2xl:mt-20 2xl:flex-row 2xl:items-center 2xl:justify-between 2xl:px-32">
         <div className="flex divide-x-2 divide-white gap-3 h-[33px] py-2">
           <span>Copyright (c) 2023</span>
           <span className="ps-3">Clarifionsupport@clarifion.com</span>
