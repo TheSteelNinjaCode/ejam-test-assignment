@@ -259,7 +259,7 @@ export default function Home() {
                 />
               </figure>
               <div>
-                <StarsIcon />
+                <StarsIcon className="w-24" />
                 <div className="flex gap-[10px] items-center">
                   <span className="text-sm font-bold">Ken T.</span>
                   <OvalCheckIcon />
